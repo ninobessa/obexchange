@@ -5,6 +5,7 @@ module ExchangesHelper
       ["Real", "BRL"],
       ["Dólar dos Estados Unidos", "USD"],
       ["Euro", "EUR"],      
+      ["BitCoin", "BTC"],
       ["Coroa checa", "CZK"],
       ["Coroa dinamarquesa", "DKK"],
       ["Coroa sueca", "SEK"],
