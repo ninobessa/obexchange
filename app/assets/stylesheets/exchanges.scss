@@ -31,7 +31,23 @@ body {
   }
 }
 
- 
+.result {
+  position: relative;
+  img {
+    height: 38px;
+    right: 0px;
+    position: absolute;
+    top: 0px;
+    display: none
+  }
+}
+
+.invert {
+  height: 25px;
+  vertical-align: top;
+  margin-left: 10px;
+} 
+
 .exchange_box{
   margin: 10px auto;
   .logo-box{

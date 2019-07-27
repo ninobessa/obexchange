@@ -9,8 +9,9 @@
       <%= form_tag('/convert', method: :get, id: 'exchange_form') do %>
         <div class='local_currency'>
           <div class='form-group'>
-            <p class='title'>Moeda Local</p>
+            <p class='title'>Moeda Local<%= link_to (image_tag '/invert.png', class: 'img-fluid invert'), '#' %></p>
             <%= select_tag 'source_currency', options_for_select(currency_list, 'BRL'), class: 'form-control', id: 'source_currency' %>
+
           </div>
 
           <div class='form-group'>
@@ -20,15 +21,13 @@
                     
         <div class='destination_currency'>
           <div class='form-group'>
-            <p class='title'>Moeda Pretendida</p>
+            <p class='title'>Moeda Pretendida<%= link_to (image_tag '/invert.png', class: 'img-fluid invert'), '#' %></p>
             <%= select_tag 'target_currency', options_for_select(currency_list, 'EUR'), class: 'form-control', id: 'target_currency'%>
           </div>
-          <div class='form-group'>
+          <div class='form-group result'>
             <input type='text' id='result' name='result' class='form-control' placeholder='Resultado' readonly>
+            <%= image_tag '/loading.gif' %>
           </div>
-        </div>
-        <div>
-          <button type='submit' class='btn btn-primary btn-exchange col-md-12'>CONVERTER</button>
         </div>
       <% end %>
     </div>
