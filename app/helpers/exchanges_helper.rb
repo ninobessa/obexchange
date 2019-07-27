@@ -2,10 +2,27 @@ module ExchangesHelper
  
   def currency_list
     [
-      'AUD', 'BGN', 'BRL', 'CAD', 'CHF', 'CNY', 'CZK', 'DKK', 'EUR', 'GBP',
-      'HKD', 'HRK', 'HUF', 'IDR', 'ILS', 'INR', 'JPY', 'KRW', 'MXN',
-      'MYR', 'NOK', 'NZD', 'PHP', 'PLN', 'RON', 'RUB', 'SEK', 'SGD',
-      'THB', 'TRY', 'USD', 'ZAR'
+      ["Real", "BRL"],
+      ["Dólar dos Estados Unidos", "USD"],
+      ["Euro", "EUR"],      
+      ["Coroa checa", "CZK"],
+      ["Coroa dinamarquesa", "DKK"],
+      ["Coroa sueca", "SEK"],
+      ["Dólar australiano", "AUD"],
+      ["Dólar canadiano", "CAD"],
+      ["Florim húngaro", "HUF"],
+      ["Franco suíço", "CHF"],
+      ["Iene japonês", "JPY"],
+      ["Iuane chinês", "CNY"],
+      ["Kuna croata", "HRK"],
+      ["Lev búlgaro", "BGN"],
+      ["Libra esterlina", "GBP"],
+      ["Novo siclo israelita", "ILS"],
+      ["Peso mexicano", "MXN"],
+      ["Ringuite malaio", "MYR"],
+      ["Rupia indiana", "INR"],
+      ["Rupia indonésia", "IDR"],
+      ["Won sul-coreano", "KRW"]
     ]
   end
 end

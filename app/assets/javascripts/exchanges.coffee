@@ -1,5 +1,4 @@
 $(document).ready ->
-
   $('form').submit ->
     if $('form').attr('action') == '/convert'
       $.ajax '/convert',
@@ -15,3 +14,11 @@ $(document).ready ->
           success: (data, text, jqXHR) ->
             $('#result').val(data.value)
         return false;
+  $('form').on 'change', 'select', ->
+    current_text =  $(this).children("option:selected").text();
+    current_id   = $(this).attr("id");
+    $('#subtitle_'+current_id).fadeOut 500, ->
+      $(this).text(current_text).fadeIn 500
+
+
+    
